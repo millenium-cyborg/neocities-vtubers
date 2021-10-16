@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vtubers on Neocities!</title>
+    <link rel="stylesheet" href="onionring.css">
+    <style>
+      @import url('onionring.css');
+      @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
+      @font-face {
+        font-family: 'Distro';
+        src: url('distro.ttf') format('truetype');
+      }
+      html {
+        background:
+          radial-gradient(
+            ellipse at 22% 31%,
+            rgb(65, 53, 98),
+            transparent 55%),
+          radial-gradient(
+            ellipse at 97% 87%,
+            rgb(81, 82, 132),
+            transparent 55%),
+          radial-gradient(
+            ellipse at 91% 53%,
+            rgb(212, 111, 75),
+            transparent 55%),
+          radial-gradient(
+            ellipse at 83% 17%,
+            rgba(114, 211, 255, 0.7),
+            transparent 35%),
+          radial-gradient(
+            ellipse at 61% 12%,
+            rgb(209, 61, 58),
+            transparent 45%),
+          radial-gradient(
+            ellipse at 53% 57%,
+            rgb(180, 65, 113),
+            transparent 55%),
+          radial-gradient(
+            ellipse at 17% 79%,
+            rgb(219, 187, 77),
+            transparent 55%),
+          linear-gradient(black, black)
+        ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #fff;
+        font-family: 'Distro', monospace;
+        font-size: calc(12pt + 0.5vw);
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
+      a {
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+      }
+
+      a:link {
+        /*color: #ddd;*/
+        color: rgb(240, 113, 66);
+      }
+
+      a:visited {
+        /*color: #aaa;*/
+        color: rgb(196, 96, 60);
+      }
+
+      a:focus {
+        border-bottom: 1px solid;
+        color: #333;
+      }
+
+      a:hover {
+        border-bottom: 1px solid;
+        color: #eee;
+      }
+
+      a:active {
+        color: #eee;
+      }
+      .main {
+        padding: calc(20px + 1rem);
+      }
+      .title-wrapper {
+        width: calc(30vw + 20rem);
+        height: 7rem;
+        position: relative;
+        text-shadow:
+          0 0 0.2rem rgba(255, 255, 255, 0.8),
+          0 0 0.4rem rgba(255, 255, 255, 0.8),
+          0 0 0.8rem rgba(255, 255, 255, 0.8);
+        margin: 0;
+        padding: 0;
+      }
+      .title-elem-1 {
+        position:absolute;
+        color: rgb(212, 111, 75);
+        font-weight: bold;
+        font-family: "Stint Ultra Expanded", monospace;
+        font-size: 2.8rem;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .title-elem-2 {
+        position:absolute;
+        color:black;
+        font-family: 'Krona One', sans-serif;
+        font-size: 4.5rem;
+        top: -0.25rem;
+        left: 3rem;
+        z-index:0;
+      }
+      .title-elem-3 {
+        position:absolute;
+        color:rgb(92, 68, 131);
+        font-family: 'Distro', monospace;
+        font-size: 2.5rem;
+        transform: scale(1.6, 1);
+        top: 2.3rem;
+        left: 6rem;
+        z-index:4;
+      }
+      .title-elem-4 {
+        position:absolute;
+        color:white;
+        font-style: italic;
+        font-family: courier, "courier new", monospace;
+        font-size: 6rem;
+        top: -0.3rem;
+        left: 23rem;
+        z-index:4;
+      }
+      .big-outline {
+        color: rgba(0,0,0,0.1);
+        font-size: 10rem;
+        transform: scale(1.2, 1) translate(-25%, 1rem) rotate3d(3,1,1, -40deg);
+      }
+      .content-wrapper {
+        position: relative;
+      }
+      .content-bg {
+        position: fixed;
+        overflow: visible;
+        text-align: center;
+        width: 200%;
+        z-index: 0;
+      }
+      .content {
+        position: absolute;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class=main>
+      <!-- going to have to manually set the total height, probably, of the container div -->
+      <!-- then make 3 child divs also of set size, with absolute positioning. -->
+      <!-- the parent container will take space in the layout and the children will be taken out of the flow. -->
+      <!-- use e.g. calc(2rem + 3vw) for a good responsive size calc -->
+      <div class=title-wrapper>
+        <div class=title-elem-1>
+        Vtubers
+        </div>
+        <div class=title-elem-2>
+        o n
+        </div>
+        <div class=title-elem-3>
+        n e o c i t i e s
+        </div>
+        <div class=title-elem-4>
+        !
+        </div>
+      </div>
+      <div class=content-wrapper>
+        <div class=content>
+          <p>Welcome to the Vtubers on Neocities webring!</p>
+
+          <p>This is a space for all content creators who use an avatar and have a site on neocities.org.</p>
+
+          <h2>What's a Webring?</h2>
+
+          <figure>
+          <blockquote style="width:50%;">
+            A webring (or web ring) is a collection of websites linked together in a circular structure, and usually organized around a specific theme, often educational or social. They were popular in the 1990s and early 2000s, particularly among amateur websites.
+          </blockquote>
+          <figcaption>Wikipedia on <a href="https://en.wikipedia.org/wiki/Webring">Webrings</a></figcaption>
+          </figure>
+
+          <p>Opening soon!</p>
+
+          <h2>Members:</h2>
+          
+          <div id='index'>
+          <script src="onionring-variables.js"></script>
+          <script src="onionring-index.js"></script>
+          </div>
+
+          <p>Maintained by Millennium Cyborg. If you want to join, DM @y2k_cyborg on Twitter!</p>
+          <img src="neocities-2.gif">
+          <img src="webpassion.gif">
+          <img src="valid-html401.gif">
+          <img src="vcss.gif">
+        </div>
+        <div class=content-bg>
+          <div class="big-outline">V T U B E R S</div>
+          <div class="big-outline">INTERACTIVE</div>
+          <div class="big-outline">MULTIMEDIA</div>
+          <div class="big-outline">ONLINE</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

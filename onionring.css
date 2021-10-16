@@ -1,0 +1,108 @@
+/* onionring.js is made up of four files - onionring-widget.js, onionring-index.js, onionring-variables.js and onionring.css (this one!)
+// it's licensed under the cooperative non-violent license (CNPL) v4+ (https://thufie.lain.haus/NPL.html)
+// it was originally made by joey + mord of allium (蒜) house, last updated 2020-10-24 */
+
+/* === ONIONRING.CSS === */
+/* this file affects the style of the widget. remember to replace all instances of #webringid with whatever value you have for ringID in the onionring-widget.js file. make sure it still has the # at the front, though! probably easiest to use find+replace to do it */
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
+@font-face {
+  font-family: 'Distro';
+  src: url('https://vtubers.neocities.org/distro.ttf') format('truetype');
+}
+
+#vtubers-on-neocities {
+  font-family: 'Distro', monospace;
+  margin: 0 auto;
+  padding: 15px; /* creates some space around the widget */
+}
+
+#vtubers-on-neocities table {
+  background-color: #000; /* makes the background pure black */
+  margin: 0 auto; /* centers the widget */
+}
+
+#vtubers-on-neocities table tr td {
+  padding: 0 15px 0 15px; /* creates some space between the links and text inside the widget */
+  border-collapse: separate;
+}
+
+#vtubers-on-neocities .webring-prev {
+  text-align: right;
+}
+
+#vtubers-on-neocities .webring-info {
+   margin: 0;
+   padding: 0;
+}
+
+#vtubers-on-neocities .webring-next {
+  text-align:left;
+}
+
+#vtubers-on-neocities .webring-links {
+  font-size:small;
+}
+
+#vtubers-on-neocities-title-pre
+{
+  margin: 0 0 0 0.5em;
+}
+
+#vtubers-on-neocities-title-post
+{
+  margin: 0 0 0 12em;
+}
+
+#vtubers-on-neocities-title-wrapper {
+  font-size: 0.5em;
+  position: relative;
+  height: 5.2em;
+  width: 25em;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#vtubers-on-neocities-title-elem-1 {
+  position:absolute;
+  color: rgb(212, 111, 75);
+  font-weight: bold;
+  font-family: "Stint Ultra Expanded", monospace;
+  font-size: 2.8em;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#vtubers-on-neocities-title-elem-2 {
+  position:absolute;
+  color:white;
+  font-family: 'Krona One', sans-serif;
+  font-size: 4.5em;
+  top: -0.25rem;
+  left: 1.5rem;
+  z-index:0;
+}
+
+#vtubers-on-neocities-title-elem-3 {
+  position:absolute;
+  color:rgb(92, 68, 131);
+  font-family: 'Distro', monospace;
+  font-size: 2.5em;
+  transform: scale(1.6, 1);
+  top: 1.15rem;
+  left: 3rem;
+  z-index:4;
+}
+
+#vtubers-on-neocities-title-elem-4 {
+  position:absolute;
+  color:white;
+  font-style: italic;
+  font-family: courier, "courier new", monospace;
+  font-size: 6em;
+  top: -0.15rem;
+  left: 11.5rem;
+  z-index:4;
+}
