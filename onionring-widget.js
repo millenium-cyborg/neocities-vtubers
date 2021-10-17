@@ -59,7 +59,7 @@ else {
   <table>
     <tr>
     <td class='webring-info' colspan=3>
-      <div id='vtubers-on-neocities-title-pre'>This site is part of the</div>
+      <div id="vtubers-on-neocities-title-pre">part of the</div>
       <div id='vtubers-on-neocities-title-wrapper'>
         <div id='vtubers-on-neocities-title-elem-1'>
         Vtubers
