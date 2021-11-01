@@ -14,6 +14,7 @@
 
 #vtubers-on-neocities {
   font-family: 'Distro', monospace;
+  color: #fff;
   margin: 0 auto;
   padding: 15px; /* creates some space around the widget */
 }
@@ -104,11 +105,13 @@
 #vtubers-on-neocities-title-pre
 {
   margin: 0 0 0 4em;
+  text-align:left;
 }
 
 #vtubers-on-neocities-title-post
 {
   margin: 0 0 0 13em;
+  text-align:left;
 }
 
 #vtubers-on-neocities-title-wrapper {
