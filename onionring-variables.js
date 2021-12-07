@@ -10,7 +10,8 @@ var sites = [
 'https://vtubers.neocities.org',
 'https://y2kcyborg.neocities.org/',
 'https://vernoncrowe.neocities.org/',
-'https://renpona.neocities.org/'
+'https://renpona.neocities.org/',
+'https://sun-s37.neocities.org/'
 ];
 
 //the name of the ring
